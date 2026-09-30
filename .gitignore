@@ -1,0 +1,31 @@
+# Local build products and packaging intermediates
+.theos/
+.build/
+packages/
+
+# Keep only the current development snapshot artifacts
+/dist/*
+!/dist/WcSy-0.2.25-app-injection.dylib
+!/dist/wcsy-0.2.25-rootless.deb
+!/dist/wcsy-0.2.25-roothide.deb
+!/dist/SHA256SUMS-0.2.25.txt
+
+# Generated UI preview, local system files and logs
+/docs/settings-preview.png
+.DS_Store
+._*
+*.log
+__pycache__/
+*.pyc
+
+# Local credentials, signing material and app archives
+.env
+.env.*
+!.env.example
+secrets/
+*.key
+*.p12
+*.p8
+*.mobileprovision
+*.ipa
+*.xcarchive/

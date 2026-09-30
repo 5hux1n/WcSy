@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "supported": [],
+  "experimental": [
+    {
+      "wechatVersion": "8.0.78",
+      "wechatBuild": "any Build with matching runtime signatures (8.0.78.34 static reference)",
+      "ios": "16.2–16.3 (16.3 connected device, 0.2.25 unverified)",
+      "jailbreakScheme": ["rootless", "roothide"],
+      "pageProbe": "static signature plus runtime type check",
+      "messageProbe": "static signature plus runtime type check",
+      "draftProbe": "static signature plus runtime readback",
+      "deviceVerified": false
+    }
+  ],
+  "staticReference": {
+    "wechatVersion": "8.0.78",
+    "wechatBuild": "8.0.78.34",
+    "source": "local decrypted IPA metadata and Objective-C strings",
+    "deviceVerified": false
+  },
+  "pendingDevice": {
+    "ios": "16.3 (USB device iPhone15,2)",
+    "jailbreakScheme": "roothide",
+    "wechatVersion": "8.0.78 (read from running WeChat bundle)",
+    "wechatBuild": "8.0.78.34 (read from running WeChat bundle)",
+    "chatPageProbe": "Frida confirmed WcSy 0.2.19 loaded from WeChat.app/Frameworks; decision files exist and user confirms old decision reappears after scrolling; immediate row restoration remains unverified in 0.2.25",
+    "messageProbe": "Frida observed 0.2.19 cached decision direction as incoming on reentry; visible row mapping was not rebuilt until scrolling",
+    "draftProbe": "user reported inputUnavailable when filling candidate on 0.2.13; 0.2.14 fallback unverified"
+  }
+}

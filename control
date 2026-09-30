@@ -1,0 +1,9 @@
+Package: com.wcsy.reply
+Name: WcSy Candidate Replies
+Version: 0.2.25
+Architecture: iphoneos-arm64
+Description: WeChat candidate reply MVP with JEV decisions and DeepSeek generation.
+Maintainer: WcSy
+Author: WcSy
+Section: Tweaks
+Depends: firmware (>= 16.0)
